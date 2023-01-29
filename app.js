@@ -55,10 +55,13 @@ function validation() {
     // password validation 
     if (passwordValue === '') {
         setError(password, emptyInput())
+    } else if (!isValidPassword(passwordValue)) {
+        setError(password, 'Password needs to be at least 8 characters long, have at least one letter and one number.')
     } else {
         setValid(password)
     }
-    
+
+    // if password2 is the same as password
     if (password2Value === '') {
         setError(password2, emptyInput())
     } else if (password2Value !== passwordValue) {
@@ -92,4 +95,8 @@ function isEmail(email) {
 
 function isTelNumber (telNumber) {
     return /d{10}|\d{9}/.test(telNumber)
+}
+
+function isValidPassword(password) {
+    return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
 }
