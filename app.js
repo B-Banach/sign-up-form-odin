@@ -67,8 +67,6 @@ function validation() {
     } else {
         setValid(password2)
     }
-
-
 }
 
 function setValid(input) {
@@ -80,8 +78,7 @@ function setValid(input) {
 }
 
 function setError(input, message) {
-        input.classList.add('error');
-
+    input.classList.add('error');
 
     let errorMessage = input.nextElementSibling;
     errorMessage.innerText = message;
