@@ -7,7 +7,6 @@ const password = document.querySelector('#password');
 const password2 = document.querySelector('#password2');
 const submitBtn = document.querySelector('.btn');
 
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validation();
@@ -70,19 +69,17 @@ function validation() {
 }
 
 function setValid(input) {
-    input.classList.remove('error')
-    input.classList.add('valid');
-
-    let errorMessage = input.nextElementSibling;
-    errorMessage.classList.add('hidden');
+	let errorMessage = input.nextElementSibling;
+	input.classList.remove('error')
+    	input.classList.add('valid');
+    	errorMessage.classList.add('hidden');
 }
 
 function setError(input, message) {
-    input.classList.add('error');
-
-    let errorMessage = input.nextElementSibling;
-    errorMessage.innerText = message;
-    errorMessage.classList.remove('hidden');
+	let errorMessage = input.nextElementSibling;
+    	input.classList.add('error');
+    	errorMessage.innerText = message;
+    	errorMessage.classList.remove('hidden');
 }
 
 function emptyInput() {
