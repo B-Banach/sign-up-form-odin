@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="img/odin-lined.png" alt="Odin Project logo.">
+                <span>ODIN</span>
+            </div>
+        </div>
+        <section>
+            <form id="form" >
+                <div class="description">
+                    <p>This is not a real oline service! <span>You know you need something like this in your life to help
+                        you
+                        realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You know you want to.</p>
+                </div>
+                <div class="form-container shadow">
+                    <p>Let's do this!</p>
+                    <div class="form-input">
+                        <div>
+                            <label for="first_name">FIRST NAME*</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Thor" class="">
+                            <small class="error-message hidden" id="error-fname">Error message</small>
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME*</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Odinson" class="">
+                            <small class="error-message hidden" id="error-lname">Error message</small>
+
+                        </div>
+                        <div>
+                            <label for="email">EMAIL*</label>
+                            <input type="email" id="email" name="email" placeholder="thor-odinson@asgard.com" class="">
+                            <small class="error-message hidden" id="error-email">Error message</small>
+
+                        </div>
+                        <div>
+                            <label for="tel_number">PHONE NUMBER</label>
+                            <input type="tel" id="tel_number" name="tel_number" placeholder="5050714361" class="">
+                            <small class="error-message hidden" id="error-tel">Error message</small>
+
+                            </div>
+                        <div>
+                            <label for="password">PASSWORD*</label>
+                            <input type="password" id="password" name="password" class="">
+                            <small class="error-message hidden" id="error-password">Error message</small>
+
+                        </div>
+                        <div>
+                            <label for="password2">CONFIRM PASSWORD*</label>
+                            <input type="password" id="password2" name="password2" class="">
+                            <small class="error-message hidden" id="error-password2">Error message</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <button class="btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
